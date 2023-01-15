@@ -26,7 +26,27 @@ export default function Home() {
               : currentUser.email || 'Unauthenticated'}
           </p>
 
-          <h1>Next Starter kit for Keystone6-OAuth</h1>
+          <h1>
+            <a
+              href="https://ijs.to"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#ae7ff0',
+              }}
+            >
+              iJS.to
+            </a>{" "}
+            Next.js Starter kit
+            <span
+              style={{
+                display: 'block',
+                fontSize: '12px',
+              }}
+            >
+              for Keystone6 with OAuth
+            </span>
+          </h1>
         </div>
 
         <div style={{
@@ -76,25 +96,40 @@ export default function Home() {
           )}
         </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
+        <div>
+          <div style={{
+            fontSize: '12px',
+          }}>
+            Starter Kit by{' '}
+            <a
+              href="https://ijs.to"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              iJS.to
+            </a>{' '} with
+          </div>
+          <div className={styles.center}>
             <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
+              className={styles.logo}
+              src="/next.svg"
+              alt="Next.js Logo"
+              width={180}
+              height={37}
               priority
             />
+            <div className={styles.thirteen}>
+              <Image
+                src="/thirteen.svg"
+                alt="13"
+                width={40}
+                height={31}
+                priority
+              />
+            </div>
           </div>
         </div>
+
       </main>
     </>
   );

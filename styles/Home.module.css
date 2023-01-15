@@ -47,7 +47,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
+  padding: 0 0 4rem;
 }
 
 .center::before {
